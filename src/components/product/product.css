@@ -1,0 +1,18 @@
+.square-image {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+  }
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+  }
+  .image-overlay h5 {
+    margin-bottom: 0;
+  }

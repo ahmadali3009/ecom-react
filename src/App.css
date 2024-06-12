@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image-slider {
+  display: flex;
+  flex-direction: column;
+  height: 82vh;
+}
+
+.image-slide {
+  position: relative;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 0.7s ease; /* Add transition for opacity */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 200px;
+  left: 20px; /* Adjust the left position as needed */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: white;
+  padding: 25px;
+}
+
+#carouselExample
+{
+  height: 82vh;
+}
+.carousel-item
+{
+  height: 82vh;
+}
+
+.carousel-item img {
+  display: block; /* Ensures the image behaves like a block-level element */
+  margin: 0 auto; /* Centers the image horizontally within its container */
+}
+
+.categories
+{
+  margin-top: 15vh;
+}
+
+.fixed-img
+{
+  margin-top: 11vh;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("/src/assets/imgs/bike.jpg");
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.text-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jacket
+{
+  margin-top: 15vh;
+}

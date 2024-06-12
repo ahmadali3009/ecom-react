@@ -1,0 +1,19 @@
+/* ProductDetail.css */
+.image-zoom-container {
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Positioning context for child elements */
+    /* productdetail.css */
+
+    overflow: auto; /* Add overflow property to enable scrolling */
+ 
+  
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s ease; /* Add transition effect for smooth zoom */
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+  }
+  
