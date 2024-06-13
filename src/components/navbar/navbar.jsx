@@ -18,9 +18,9 @@ export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light mx-2"> {/* Add mx-5 class for horizontal margin */}
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img src={props.imgurl} alt="Company Logo" width="60px" height="60px" />
-        </a>
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

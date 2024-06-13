@@ -27,7 +27,7 @@ export default function Home(props) {
               <img src="/src/assets/imgs/pic2.jpg" className="card-img-top" alt="..." />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Sports Wear</strong></h5>
-                <Link to="/products/sports/Sports-Wear" className='btn btn-outline-secondary'>
+                <Link to="/products/Sports-Wear" className='btn btn-outline-secondary'>
                   VIEW ALL RANGE --
                 </Link>              </div>
             </div>
@@ -37,7 +37,9 @@ export default function Home(props) {
               <img src="/src/assets/imgs/j1 (13).png" className="card-img-top" alt="..." style={{ borderRadius: "6px" }} />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>versatile Wear</strong></h5>
-                <button className='btn btn-outline-secondary'> VIEW ALL RANGE -- </button>
+                <Link to="/products/Versatile-Wear" className='btn btn-outline-secondary'>
+                  VIEW ALL RANGE --
+                </Link> 
               </div>
             </div>
           </div>
@@ -48,8 +50,9 @@ export default function Home(props) {
         <div className='text-container' >
           <h4 className='w-100'>PAY LESS, BUY BEST</h4>
           <h1 className='w-150 fw-bold'>Leather Jackets</h1>
-          <button className='btn btn-outline-secondary w-100'>VIEW ALL --</button>
-        </div>
+          <Link to="/products/Leather-Jacket" className='btn btn-outline-secondary'>
+                  VIEW ALL RANGE --
+                </Link>        </div>
       </div>
 
 
