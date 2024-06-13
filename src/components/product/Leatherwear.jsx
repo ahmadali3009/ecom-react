@@ -9,16 +9,16 @@ const Leatherwear = () => {
     <h4>Showing 1-20</h4>
     <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">         
       <div className="col">
-        <Jacketproducts imgurl={"/src/assets/imgs/homepagej1.jpg"} title={"Tawton Leather Fashion Jacket"} code={"LJ-8123"}/>
+        <Jacketproducts imgurl={"/src/assets/imgs/homepage1.jpg"} title={"Tawton Leather Fashion Jacket"} code={"LJ-8123"}/>
       </div>
       <div className="col">
-        <Jacketproducts imgurl={"/src/assets/imgs/homepagej2.jpg"} title={"Nicole Ladies Jacket"} code={"LJ-8198"} />
+        <Jacketproducts imgurl={"/src/assets/imgs/homepage2.jpg"} title={"Nicole Ladies Jacket"} code={"LJ-8198"} />
       </div>
       <div className="col">
-        <Jacketproducts imgurl={"/src/assets/imgs/homepagejacket3.jpg"} title={"Greta Ladies Jacket"} code={"LJ-8199"}/>
+        <Jacketproducts imgurl={"/src/assets/imgs/homepage3.jpg"} title={"Greta Ladies Jacket"} code={"LJ-8199"}/>
       </div>
       <div className="col">
-        <Jacketproducts imgurl={"/src/assets/imgs/homepagej4.jpg"} title={"Solar Leather Fashion Jacket"} code={"LJ-8124"}/>
+        <Jacketproducts imgurl={"/src/assets/imgs/homepage4.jpg"} title={"Solar Leather Fashion Jacket"} code={"LJ-8124"}/>
       </div>
       <div className="col">
         <Jacketproducts imgurl={"/src/assets/imgs/j1 (1).jpg"} title={"Emir Leather Fashion Jacket"} code={"LJ-8168"}/>
@@ -36,7 +36,7 @@ const Leatherwear = () => {
         <Jacketproducts imgurl={"/src/assets/imgs/j1 (5).jpg"} title={"Denzel Leather Fashion Jacket"} code={"LJ-8154"}/>
       </div>
       <div className="col">
-        <Jacketproducts imgurl={"/src/assets/imgs/j1 (6).png"} title={"DEPP LEATHER FASHION JACKET"} code={"LJ-8144"} />
+        <Jacketproducts imgurl={"/src/assets/imgs/category1.png"} title={"DEPP LEATHER FASHION JACKET"} code={"LJ-8144"} />
       </div>
       <div className="col">
         <Jacketproducts imgurl={"/src/assets/imgs/j1 (7).jpg"} title={"DEXTER LEATHER FASHION JACKET"} code={"LJ-8131"}/>

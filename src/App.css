@@ -3,29 +3,98 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  padding: 15px;
+}
+
 .image-slider {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   height: 82vh;
 }
 
 .image-slide {
-  position: relative;
-  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-slide.active {
   opacity: 1;
-  transition: opacity 0.7s ease; /* Add transition for opacity */
 }
 
 .text-overlay {
   position: absolute;
-  top: 200px;
-  left: 20px; /* Adjust the left position as needed */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  color: white;
-  padding: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Adjust width for better text wrapping */
+  max-width: 600px; /* Max width to ensure it doesn't get too wide */
 }
+
+.text-container {
+  margin: 0 auto;
+}
+
+.enhanced-h1 {
+  font-size: 2.5rem; /* Adjusted font size for better responsiveness */
+  color: #fff; /* White color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow */
+  margin-bottom: 20px;
+}
+
+.enhanced-p {
+  font-size: 1.2rem; /* Adjusted font size for better responsiveness */
+  color: #fff; /* White color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow */
+  margin-bottom: 30px;
+}
+
+.enhanced-btn {
+  background: linear-gradient(45deg, #ff4c4c, #ff8c4c); /* Gradient background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.enhanced-btn:hover {
+  background: linear-gradient(45deg, #ff8c4c, #ff4c4c); /* Reverse gradient on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+@media (max-width: 768px) {
+  .text-overlay {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .enhanced-h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .enhanced-p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .enhanced-btn {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    padding: 8px 16px; /* Adjusted padding for mobile */
+  }
+}
+
+
 
 #carouselExample
 {
@@ -48,7 +117,7 @@
 
 .fixed-img
 {
-  margin-top: 11vh;
+  margin-top: 6vh;
   width: 100%;
   height: 500px;
   background-position: center;
@@ -76,4 +145,117 @@
 .jacket
 {
   margin-top: 15vh;
+}
+.bg-secondary {
+background-color: rgb(163 174 183)!important
+}
+
+/* App.css */
+
+/* App.css */
+
+/* Section Styling */
+.provide-services-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.provide-services-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* Card Styling */
+.service-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Body Styling */
+.service-card .card-body {
+  padding: 30px;
+}
+
+/* Icon Styling */
+.service-card .icon.check {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+  transition: color 0.3s ease-in-out;
+}
+
+.service-card:hover .icon.check {
+  color: #e04343;
+}
+
+/* Card Title Styling */
+.service-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Card Text Styling */
+.service-card .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button Styling */
+.service-card .btn {
+  background: rgb(163, 174, 183);
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.service-card .btn:hover {
+  background: rgb(139, 148, 156);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .provide-services-section {
+    padding: 30px 0;
+  }
+
+  .provide-services-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-card .card-body {
+    padding: 20px;
+  }
+
+  .service-card .icon.check {
+    font-size: 2rem;
+  }
+
+  .service-card .card-title {
+    font-size: 1.25rem;
+  }
+
+  .service-card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .service-card .btn {
+    font-size: 0.9rem;
+  }
+}
+.jackett .card-img-top {
+  height: 300px; /* Set the desired height */
+  width: 100%;  /* Ensure the image takes the full width of its container */
+  object-fit: contain; /* Contain the image within the specified dimensions */
+  border-radius: 8px; /* Optional: add rounded corners */
+  background-color: #f5f5f5; /* Optional: set a background color for empty spaces */
 }

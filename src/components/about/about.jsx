@@ -1,24 +1,25 @@
 import React from 'react';
+import "./aboutstyle.css"
 // import finestQualityImage from './finest-quality.jpg'; // Import your image
 
 const AboutSection = () => {
   return (
     <section className="about-section py-5" style={{ marginLeft: '150px', marginRight: '150px' }}>
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-md-6">
-            <img src="{finestQualityImage}" alt="Finest Quality Products" className="img-fluid mb-4" />
+            <img src="/src/assets/imgs/finnest.jpg" alt="Finest Quality Products" className="img-fluid mb-4 rounded shadow" />
           </div>
           <div className="col-md-6">
             <h2 className="section-title mb-4">Finest Quality Products</h2>
-            <h4 className="sub-title">by Stitch Fam Apparel</h4>
+            <h4 className="sub-title">by Jovial Hub</h4>
             <p className="detail">
               <strong>ESTABLISHED SINCE 2007</strong><br />
               We Are Manufacturers And Exporters Of Premium Quality Leather Jackets And Apparel. With Our Dedicated And Hardworking Expertise, Stitch Fam Apparel Have Been Able To Provide Best Quality Products To Our Customers At Competent Prices. Our Dynamic Team With Best Talent And Latest Printing Technologies Is Continuously Enhancing Values Of Stitch Fam Apparel And Its Clients.
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-5">
           <div className="col-md-12 text-center">
             <h4 className="sub-title mt-5">How We Do It</h4>
             <p className="detail">

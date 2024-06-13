@@ -1,0 +1,37 @@
+.footer {
+    background-color: #f8f9fa;
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .footer-link {
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: #343a40;
+    text-decoration: underline;
+  }
+  
+  .footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #343a40;
+  }
+  
+  .footer-address, .footer-style {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .containerr {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

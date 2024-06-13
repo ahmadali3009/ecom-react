@@ -22,17 +22,17 @@ const Categories = () => {
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {/* First Category */}
             <div className="col">
-              <Productlist imgurl={"/src/assets/imgs/category1.jpg"} code={"Leather-Jacket"} text={"Leather Jacket"}/>
+              <Productlist imgurl={"/src/assets/imgs/category1.png"} code={"Leather-Jacket"} text={"Leather Jacket"}/>
             </div>
 
             {/* Second Category */}
             <div className="col">
-              <Productlist imgurl={"/src/assets/imgs/category2.jpg"} code={"Sports-Wear"} text={"Sports Wear"}/>
+              <Productlist imgurl={"/src/assets/imgs/pic3.jpg"} code={"Sports-Wear"} text={"Sports Wear"}/>
             </div>
 
             {/* Third Category */}
             <div className="col">
-              <Productlist imgurl={"/src/assets/imgs/category3.jpg"} code={"Active-Wear"} text={"Active Wear"}/>
+              <Productlist imgurl={"/src/assets/imgs/vers.png"} code={"Versatile-Wear"} text={"Versatile Wear"}/>
             </div>
 
             {/* Add more categories as needed */}

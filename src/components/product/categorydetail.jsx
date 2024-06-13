@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom"
 import ProductDetail from '../productdetail';
 import SportswearProducts from './sportwearproduct';
 import Leatherwear from './Leatherwear';
+import Versatilewear from './Versatilewear';
 
 const CategoryDetail = () => {
   const { code } = useParams()
@@ -16,8 +17,8 @@ const CategoryDetail = () => {
     case 'Sports-Wear':
       categoryComponent = <SportswearProducts code={code} />;
       break;
-    case 'Active-Wear':
-      categoryComponent = <ActivewearProducts code={code}/>;
+    case 'Versatile-Wear':
+      categoryComponent = <Versatilewear code={code}/>;
       break;
     default:
       categoryComponent = null; // Handle cases where code does not match any category

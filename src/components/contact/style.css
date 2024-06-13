@@ -1,0 +1,93 @@
+/* Contact Section Styling */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .section-title::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #ff4c4c;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    color: #ff4c4c;
+  }
+  
+  .map {
+    margin-top: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: rgb(163, 174, 183) !important;
+    border-color: rgb(163, 174, 183) !important;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4a5568 !important;
+    border-color: #4a5568 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 30px 0;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  
