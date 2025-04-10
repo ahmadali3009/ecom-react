@@ -1,0 +1,49 @@
+.about-section {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .about-section img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .detail {
+      text-align: justify;
+    }
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .sub-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .detail {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .sub-title {
+      font-size: 1.25rem;
+    }
+  
+    .detail {
+      font-size: 0.9rem;
+    }
+  }
+  

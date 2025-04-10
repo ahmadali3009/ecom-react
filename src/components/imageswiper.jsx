@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../App.css"; // assuming you have a CSS file for styling
 import { LuShirt } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import bg1 from '../assets/imgs/bg1.jpeg'
+import bg2 from '../assets/imgs/bg3.jpg'
+
 
 const Imageswiper = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,7 +18,7 @@ const Imageswiper = () => {
 
   return (
     <div className="image-slider">
-      <div className={`image-slide ${currentSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url('/src/assets/imgs/bg1.jpeg')` }}>
+      <div className={`image-slide ${currentSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(${bg1})` }}>
         <div className="text-overlay">
           <div className="text-container">
             <LuShirt fontSize={"30px"} style={{ color: '#ff4c4c', marginBottom: '20px' }} />
@@ -26,7 +29,7 @@ const Imageswiper = () => {
                 </Link>          </div>
         </div>
       </div>
-      <div className={`image-slide ${currentSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url('/src/assets/imgs/bg3.jpg')` }}>
+      <div className={`image-slide ${currentSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(${bg2})` }}>
         <div className="text-overlay">
           <div className="text-container">
             <LuShirt fontSize={"30px"} style={{ color: '#ff4c4c', marginBottom: '20px' }} />

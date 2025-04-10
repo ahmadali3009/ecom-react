@@ -1,5 +1,8 @@
 import React from 'react';
 import Productlist from './productlist';
+import c1 from "../../assets/imgs/category1.png"
+import c2 from "../../assets/imgs/pic3.jpg"
+import c3 from "../../assets/imgs/vers.png"
 
 const Categories = () => {
   return (
@@ -22,17 +25,17 @@ const Categories = () => {
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {/* First Category */}
             <div className="col">
-              <Productlist imgurl={"/src/assets/imgs/category1.png"} code={"Leather-Jacket"} text={"Leather Jacket"}/>
+              <Productlist imgurl={c1} code={"Leather-Jacket"} text={"Leather Jacket"}/>
             </div>
 
             {/* Second Category */}
             <div className="col">
-              <Productlist imgurl={"/src/assets/imgs/pic3.jpg"} code={"Sports-Wear"} text={"Sports Wear"}/>
+              <Productlist imgurl={c2} code={"Sports-Wear"} text={"Sports Wear"}/>
             </div>
 
             {/* Third Category */}
             <div className="col">
-              <Productlist imgurl={"/src/assets/imgs/vers.png"} code={"Versatile-Wear"} text={"Versatile Wear"}/>
+              <Productlist imgurl={c3} code={"Versatile-Wear"} text={"Versatile Wear"}/>
             </div>
 
             {/* Add more categories as needed */}

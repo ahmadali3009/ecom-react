@@ -1,14 +1,14 @@
 import React from 'react';
-import "./aboutstyle.css"
-// import finestQualityImage from './finest-quality.jpg'; // Import your image
+import "./aboutstyle.css";
+import finnest from "../../assets/imgs/finnest.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="about-section py-5" style={{ marginLeft: '150px', marginRight: '150px' }}>
+    <section className="about-section py-5">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6">
-            <img src="/src/assets/imgs/finnest.jpg" alt="Finest Quality Products" className="img-fluid mb-4 rounded shadow" />
+          <div className="col-md-6 mb-4 mb-md-0">
+            <img src={finnest} alt="Finest Quality Products" className="img-fluid rounded shadow" />
           </div>
           <div className="col-md-6">
             <h2 className="section-title mb-4">Finest Quality Products</h2>

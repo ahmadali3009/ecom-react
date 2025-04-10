@@ -4,16 +4,37 @@ import Imageswiper from './imageswiper';
 import Jacketproducts from './jacketproducts';
 import { FaCheck } from "react-icons/fa"
 import { Link } from 'react-router-dom';
+import jacketImage1 from '../assets/imgs/j1 (2).png';
+import jacketImage2 from '../assets/imgs/pic2.jpg';
+import jacketImage3 from "../assets/imgs/j1 (13).png"
+import leatherjacket1 from "../assets/imgs/j1 (10).png"
+import leatherjacket2 from "../assets/imgs/homepage2.jpg"
+import leatherjacket3 from "../assets/imgs/homepage3.jpg"
+import leatherjacket4 from "../assets/imgs/homepage4.jpg"
+import Versatile1 from "../assets/imgs/v (1).jpg"
+import Versatile2 from "../assets/imgs/v (9).jpg"
+import Versatile3 from "../assets/imgs/v (2).jpg"
+import Versatile4 from "../assets/imgs/v (4).jpg"
+import sport1 from "../assets/imgs/sports/sports (1).jpg"
+import sport2 from "../assets/imgs/sports/sports (4).jpg"
+import sport3 from "../assets/imgs/sports/sports (13).jpg"
+import sport4 from "../assets/imgs/sports/sports (23).jpg"
+import { FaTruck } from 'react-icons/fa'; // Import delivery icon
+import bikeImage from '../assets/imgs/bike.jpg'; // Adjust the path as necessary
+
+
+
+
 export default function Home(props) {
   return (
     <>
       <Imageswiper />
       <div className='container categories'>
-        <h5>Categories</h5>
+        <h5 className='text-center'>Categories</h5>
         <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
           <div className="col mt-4">
             <div className="card border-0">
-              <img src="/src/assets/imgs/j1 (2).png" className="card-img-top" alt="..." />
+              <img src={jacketImage1} className="card-img-top" alt="..." />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Leather Wear</strong></h5>
                 <Link to="/products/Leather-Jacket" className='btn btn-outline-secondary'>
@@ -24,7 +45,7 @@ export default function Home(props) {
           </div>
           <div className="col mt-4">
             <div className="card border-0">
-              <img src="/src/assets/imgs/pic2.jpg" className="card-img-top" alt="..." />
+              <img src={jacketImage2} className="card-img-top" alt="..." />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Sports Wear</strong></h5>
                 <Link to="/products/Sports-Wear" className='btn btn-outline-secondary'>
@@ -34,7 +55,7 @@ export default function Home(props) {
           </div>
           <div className="col mt-4 ">
             <div className="card border-0">
-              <img src="/src/assets/imgs/j1 (13).png" className="card-img-top" alt="..." style={{ borderRadius: "6px" }} />
+              <img src={jacketImage3} className="card-img-top" alt="..." style={{ borderRadius: "6px" }} />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>versatile Wear</strong></h5>
                 <Link to="/products/Versatile-Wear" className='btn btn-outline-secondary'>
@@ -46,66 +67,69 @@ export default function Home(props) {
         </div>
       </div>
 
-      <div className='fixed-img'>
-        <div className='text-container' >
+      <div className='fixed-img-container'>
+      <div className='fixed-img' style={{ backgroundImage: `url(${bikeImage})` }}>
+        <div className='text-containerr'>
           <h4 className='w-100'>PAY LESS, BUY BEST</h4>
           <h1 className='w-150 fw-bold'>Leather Jackets</h1>
           <Link to="/products/Leather-Jacket" className='btn btn-outline-secondary'>
-                  VIEW ALL RANGE --
-                </Link>        </div>
+            VIEW ALL RANGE --
+          </Link>
+        </div>
       </div>
+    </div>
 
 
       <div className='container jackett'>
-        <h5>LEATHER JACKETS</h5>
+        <h5 className='text-center my-5' >LEATHER JACKETS</h5>
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/j1 (10).png"} title={"Tawton Leather Fashion Jacket"} code={"LJ-8123"} />
+            <Jacketproducts imgurl={leatherjacket1} title={"Tawton Leather Fashion Jacket"} code={"LJ-8123"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/homepage2.jpg"} title={"Nicole Ladies Jacket"} code={"LJ-8198"} />
+            <Jacketproducts imgurl={leatherjacket2} title={"Nicole Ladies Jacket"} code={"LJ-8198"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/homepage3.jpg"} title={"Greta Ladies Jacket"} code={"LJ-8199"} />
+            <Jacketproducts imgurl={leatherjacket3} title={"Greta Ladies Jacket"} code={"LJ-8199"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/homepage4.jpg"} title={"Solar Leather Fashion Jacket"} code={"LJ-8124"} />
+            <Jacketproducts imgurl={leatherjacket4} title={"Solar Leather Fashion Jacket"} code={"LJ-8124"} />
           </div>
         </div>
       </div>
 
       <div className='container jacket'>
-        <h5>Versatile Jacket</h5>
+        <h5 className='text-center' >Versatile Jacket</h5>
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/v (1).jpg"} title={"Versatile wear"} code={"vw-0007"} />
+            <Jacketproducts imgurl={Versatile1} title={"Versatile wear"} code={"vw-0007"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/v (9).jpg"} title={"Versatile wear"} code={"vw-6005"} />
+            <Jacketproducts imgurl={Versatile2} title={"Versatile wear"} code={"vw-6005"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/v (2).jpg"} title={"Versatile wear"} code={"vw-0008"} />
+            <Jacketproducts imgurl={Versatile3} title={"Versatile wear"} code={"vw-0008"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/v (4).jpg"} title={"Versatile wear"} code={"vw-6009"} />
+            <Jacketproducts imgurl={Versatile4} title={"Versatile wear"} code={"vw-6009"} />
           </div>
         </div>
       </div>
 
       <div className='container jacket'>
-        <h5>Sports wear</h5>
+        <h5 className='text-center' >Sports wear</h5>
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/sports/sports (1).jpg"} title={"Baseball Jersey"} code={"bbj-0007"} />
+            <Jacketproducts imgurl={sport1} title={"Baseball Jersey"} code={"bbj-0007"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/sports/sports (4).jpg"} title={"American Football Uniform"} code={"AFU-6009"} />
+            <Jacketproducts imgurl={sport2} title={"American Football Uniform"} code={"AFU-6009"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/sports/sports (13).jpg"} title={"BASKETBALL UNIFORM"} code={"bb-0002"} />
+            <Jacketproducts imgurl={sport3} title={"BASKETBALL UNIFORM"} code={"bb-0002"} />
           </div>
           <div className="col">
-            <Jacketproducts imgurl={"/src/assets/imgs/sports/sports (23).jpg"} title={"Baseball Jersey"} code={"bbj-0001"} />
+            <Jacketproducts imgurl={sport4} title={"Baseball Jersey"} code={"bbj-0001"} />
           </div>
         </div>
       </div>
@@ -158,6 +182,43 @@ export default function Home(props) {
     </div>
   </div>
 </section>
+
+{/* Delivery Options */}
+<section className="bg-light p-4 mb-5">
+        <div className="container">
+          <h2 className="text-center mb-4">Delivery Options</h2>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="text-center">
+                <FaTruck style={{ fontSize: '3rem', color: '#25D366' }} />
+              </div>
+              <h4 className="mt-3">Worldwide Shipping</h4>
+              <p className="text-muted">We offer worldwide shipping with tracking options.</p>
+            </div>
+            <div className="col-md-4">
+              <div className="text-center">
+                <FaTruck style={{ fontSize: '3rem', color: '#25D366' }} />
+              </div>
+              <h4 className="mt-3">Express Delivery</h4>
+              <p className="text-muted">Choose express delivery for faster shipping.</p>
+            </div>
+            <div className="col-md-4">
+              <div className="text-center">
+                <FaTruck style={{ fontSize: '3rem', color: '#25D366' }} />
+              </div>
+              <h4 className="mt-3">Free Returns</h4>
+              <p className="text-muted">Enjoy hassle-free returns on all orders.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="text-center">
+        <h2>Ready to Explore?</h2>
+        <p>Start shopping now and discover your perfect jacket or activewear!</p>
+        <Link to="/products" className="btn btn-primary btn-lg">Shop Now</Link>
+      </section>
 
 
     </>
